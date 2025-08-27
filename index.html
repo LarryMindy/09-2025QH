@@ -13,17 +13,22 @@
       direction: rtl;
       text-align: right;
     }
-    .language-switch {
-      display: inline-block;
-      padding: 8px 16px;
-      background-color: black;
-      color: white;
-      border-radius: 20px;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 10px 0 40px 10px;
-      float: left;
+   .language-switch {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px 0 40px 10px;
+  /* float: left; ← remove this */
     }
+    .clearfix {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
     .language-switch:hover { background-color: #444; }
      .title-block {
       text-align: center;
@@ -351,4 +356,5 @@ showQuestion(currentIndex);
 </script>
 </body>
 </html>
+
 
